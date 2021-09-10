@@ -1,0 +1,153 @@
+body {
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", Tohoma, Arial;    
+    width: 100%;
+}
+
+/* 畫面寬度<=768px的CSS (手機)*/
+@media (max-width: 768px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #logo img{
+        height: 60px;
+        width: auto;
+    }
+
+    #collapsibleNavbar .nav-item{
+        text-align: center;
+        border-bottom: 1px solid #666;
+    }
+    
+    #menu-bar1 li a{
+        background-color: #428bca;
+        opacity: 0.8;
+        color: #eee;
+    }
+
+    #menu-bar2 li a{
+        background-color: #333333;
+        color: #eee;
+    }
+
+    #menu-bar1 .dropdown-item{
+    text-align: center;
+    }
+
+    #carouselExampleIndicators .carousel-indicators li{ /*目錄(button)形狀*/
+        height: 5px;
+        width: 5px;
+        margin: 0, 5px;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 1;
+    }
+
+    #carouselExampleIndicators .carousel-indicators{ /*目錄(button)形狀*/
+        right: 10px;
+        bottom: 5px;
+    }
+}
+
+/* 畫面寬度>=768px的CSS (手機以外)*/
+@media (min-width: 768px) {  
+    #pc-top1 .nav-item a{
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 9px;
+    }
+    
+    #air{
+        color: #fff;
+        font-size: 14px;
+    }
+
+    #air span{
+        background-color: #9cff9c;
+        border-radius: 5px;
+        padding: 2px 6px;
+        color: #333333;
+        font-size: 15px;
+    }
+
+    #Phone-top2{
+        padding: 0;
+    }
+    #Phone-top2 .phone-top4 .nav-item{
+        width: 85px;
+    }
+    #Phone-top2 .phone-top4 .nav-item a{
+        color: #fff;
+    }
+
+    #menu-bar1{
+        flex-wrap: wrap;
+    }
+
+    #menu-bar1 .nav-item:first-child{
+        border-left: 1px solid #ccc;
+    }
+
+    #menu-bar1 .nav-item > a:hover{
+        position: absolute;
+    }
+}
+
+/* 通用CSS */
+#carousel-area{
+    width: 100%;
+    background-color: #333333;
+}
+
+#carouselExampleIndicators .carousel-indicators{ /*目錄(button)位置*/
+    position: absolute;
+    left: auto;
+    right: 20px;
+    bottom: 20px;
+    margin: 0;
+    align-items: center;
+}
+
+#carouselExampleIndicators .carousel-indicators li{ /*目錄(button)形狀*/
+    height: 10px;
+    width: 10px;
+    margin: 0, 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 1;
+}
+
+#carouselExampleIndicators .carousel-indicators li.active{ /*目錄(button)形狀(被選中時)*/
+    border: 1px solid #b94840;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.phone-top4 .nav-item{
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+.phone-top4 .nav-item .nav-link{
+    color: #fff;
+    font-size: 14px;
+    padding: 18px 14px;
+}
+
+.phone-top4 .nav-item:nth-child(1){
+    background-color: #4276a6;
+}
+
+.phone-top4 .nav-item:nth-child(2){
+    background-color: #b94840;
+}
+
+.phone-top4 .nav-item:nth-child(3){
+    background-color: #896555;
+}
+
+.phone-top4 .nav-item:nth-child(4){
+    background-color: #955ba5;
+}
